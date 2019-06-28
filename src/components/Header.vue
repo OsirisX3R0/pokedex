@@ -1,7 +1,11 @@
 <template>
     <header>
-        <img alt="Pokedex" src="../assets/Pokeball.png">
-        <h1>Pok&#233;dex</h1>
+        <router-link to="/" class="dark">
+            <img alt="Pokedex" src="../assets/Pokeball.png">
+        </router-link>
+        <router-link to="/" class="dark">
+            <h1>Pok&#233;dex</h1>
+        </router-link>
     </header>
 </template>
 
@@ -19,7 +23,6 @@ header {
 }
 header img {
     width: 110px;
-    float: left;
 }
 header h1 {
     margin: 3.5rem 0 0 2.25rem;

@@ -1,5 +1,13 @@
 <template>
-  <div></div>
+  <div>
+    <div class="card">
+      <div class="card-head">
+        <h3>
+          <router-link to="/pokemon" class="dark">Pokemon</router-link>
+        </h3>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>

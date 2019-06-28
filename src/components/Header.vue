@@ -1,7 +1,7 @@
 <template>
     <header>
         <img alt="Pokedex" src="../assets/Pokeball.png">
-        <h1>Pokedex</h1>
+        <h1>Pok&#233;dex</h1>
     </header>
 </template>
 
@@ -12,9 +12,16 @@ export default {
 </script>
 
 <style scoped>
-  img {
-    width: 110px;
+header {
     margin: 1rem;
+    display: grid;
+    grid-template-columns: 110px 1fr
+}
+header img {
+    width: 110px;
     float: left;
-  }
+}
+header h1 {
+    margin: 3.5rem 0 0 2.25rem;
+}
 </style>

@@ -1,0 +1,642 @@
+body:not(.dark) input[type=text], body:not(.dark) input[type=number], body:not(.dark) input[type=date], body:not(.dark) input[type=datetime], body:not(.dark) input[type=color], body:not(.dark) input[type=password], body:not(.dark) input[type=radio], body:not(.dark) input[type=checkbox], body:not(.dark) select {
+  color: #212121;
+}
+
+body:not(.dark) input[type=number] {
+  color: #212121;
+}
+
+body:not(.dark) input[type=date] {
+  color: #212121;
+}
+
+body:not(.dark) input[type=datetime] {
+  color: #212121;
+}
+
+body:not(.dark) input[type=color] {
+  color: #212121;
+}
+
+body:not(.dark) input[type=password] {
+  color: #212121;
+}
+
+body:not(.dark) input[type=radio] {
+  color: #212121;
+}
+
+body:not(.dark) input[type=checkbox] {
+  color: #212121;
+}
+
+body:not(.dark) select {
+  color: #212121;
+}
+
+body:not(.dark) label.check .mark::after, body:not(.dark) label.radio .mark::after {
+  border: solid #f5f5f5;
+  border-width: 0 2px 2px 0;
+}
+
+body:not(.dark) label.radio .mark::after {
+  background-color: #f5f5f5;
+  border: 0;
+}
+
+body.dark input[type=text], body.dark input[type=number], body.dark input[type=date], body.dark input[type=datetime], body.dark input[type=color], body.dark input[type=password], body.dark input[type=radio], body.dark input[type=checkbox], body.dark select {
+  color: #f5f5f5;
+}
+
+body.dark input[type=number] {
+  color: #f5f5f5;
+}
+
+body.dark input[type=date] {
+  color: #f5f5f5;
+}
+
+body.dark input[type=datetime] {
+  color: #f5f5f5;
+}
+
+body.dark input[type=color] {
+  color: #f5f5f5;
+}
+
+body.dark input[type=password] {
+  color: #f5f5f5;
+}
+
+body.dark input[type=radio] {
+  color: #f5f5f5;
+}
+
+body.dark input[type=checkbox] {
+  color: #f5f5f5;
+}
+
+body.dark select {
+  color: #f5f5f5;
+}
+
+body.dark select option {
+  color: #212121;
+}
+
+body.dark label.check .mark::after, body.dark label.radio .mark::after {
+  border: solid #212121;
+  border-width: 0 2px 2px 0;
+}
+
+body.dark label.radio .mark::after {
+  background-color: #212121;
+  border: 0;
+}
+
+input[type=text], input[type=number], input[type=date], input[type=datetime], input[type=color], input[type=password], input[type=radio], input[type=checkbox], select {
+  font-family: 'Montserrat-Regular', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  background: none;
+  border: solid #d4d4d4;
+  border-width: 0px 0px 1px 0px;
+  padding: 0.5rem;
+  outline-color: rgba(0, 0, 0, 0);
+}
+
+input[type=text]:focus, input:focus[type=number], input:focus[type=date], input:focus[type=datetime], input:focus[type=color], input:focus[type=password], input:focus[type=radio], input:focus[type=checkbox], select:focus {
+  border-color: #0808c9;
+}
+
+input[type=text].secondary:focus, input.secondary:focus[type=number], input.secondary:focus[type=date], input.secondary:focus[type=datetime], input.secondary:focus[type=color], input.secondary:focus[type=password], input.secondary:focus[type=radio], input.secondary:focus[type=checkbox], select.secondary:focus {
+  border-color: #9e9e9e;
+}
+
+input[type=text].info:focus, input.info:focus[type=number], input.info:focus[type=date], input.info:focus[type=datetime], input.info:focus[type=color], input.info:focus[type=password], input.info:focus[type=radio], input.info:focus[type=checkbox], select.info:focus {
+  border-color: #51a1ec;
+}
+
+input[type=text].success:focus, input.success:focus[type=number], input.success:focus[type=date], input.success:focus[type=datetime], input.success:focus[type=color], input.success:focus[type=password], input.success:focus[type=radio], input.success:focus[type=checkbox], select.success:focus {
+  border-color: #05C16C;
+}
+
+input[type=text].warn:focus, input.warn:focus[type=number], input.warn:focus[type=date], input.warn:focus[type=datetime], input.warn:focus[type=color], input.warn:focus[type=password], input.warn:focus[type=radio], input.warn:focus[type=checkbox], select.warn:focus {
+  border-color: #E1BB22;
+}
+
+input[type=text].error:focus, input.error:focus[type=number], input.error:focus[type=date], input.error:focus[type=datetime], input.error:focus[type=color], input.error:focus[type=password], input.error:focus[type=radio], input.error:focus[type=checkbox], select.error:focus {
+  border-color: #E90000;
+}
+
+input[type=text].light:focus, input.light:focus[type=number], input.light:focus[type=date], input.light:focus[type=datetime], input.light:focus[type=color], input.light:focus[type=password], input.light:focus[type=radio], input.light:focus[type=checkbox], select.light:focus {
+  border-color: #f5f5f5;
+}
+
+input[type=text].dark:focus, input.dark:focus[type=number], input.dark:focus[type=date], input.dark:focus[type=datetime], input.dark:focus[type=color], input.dark:focus[type=password], input.dark:focus[type=radio], input.dark:focus[type=checkbox], select.dark:focus {
+  border-color: #212121;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 8.65px 0;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #c7c7c7;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 1.7px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 0px #000, 0px 0px 0px #000;
+          box-shadow: 0px 0px 0px #000, 0px 0px 0px #000;
+  background: #c7c7c7;
+  border-radius: 1.3px;
+  border-width: 0px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-box-shadow: 0px 0px 0px #000, 0px 0px 0px #000;
+          box-shadow: 0px 0px 0px #000, 0px 0px 0px #000;
+  border-width: 0px;
+  height: 19px;
+  width: 16px;
+  border-radius: 23px;
+  background: #c7c7c7;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8.65px;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 1.7px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000, 0px 0px 0px #000;
+  background: #c7c7c7;
+  border-radius: 1.3px;
+  border-width: 0px;
+}
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000, 0px 0px 0px #000;
+  border-width: 0px;
+  height: 19px;
+  width: 16px;
+  border-radius: 23px;
+  background: #c7c7c7;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 1.7px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #c2c2c2;
+  border: 0px solid rgba(1, 1, 1, 0);
+  border-radius: 2.6px;
+  box-shadow: 0px 0px 0px #000, 0px 0px 0px #000;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #c7c7c7;
+  border: 0px solid rgba(1, 1, 1, 0);
+  border-radius: 2.6px;
+  box-shadow: 0px 0px 0px #000, 0px 0px 0px #000;
+}
+
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #000, 0px 0px 0px #000;
+  border-width: 0px;
+  height: 19px;
+  width: 16px;
+  border-radius: 23px;
+  background: #c7c7c7;
+  cursor: pointer;
+  height: 1.7px;
+}
+
+input[type=range].primary:focus::-ms-fill-lower {
+  background: #0808c9;
+}
+
+input[type=range].primary::-webkit-slider-runnable-track {
+  background: #0808c9;
+}
+
+input[type=range].primary::-webkit-slider-thumb {
+  background: #0808c9;
+}
+
+input[type=range].primary::-moz-range-track {
+  background: #0808c9;
+}
+
+input[type=range].primary::-moz-range-thumb {
+  background: #0808c9;
+}
+
+input[type=range].primary::-ms-fill-lower {
+  background: #0808bf;
+}
+
+input[type=range].primary::-ms-fill-upper {
+  background: #0808c9;
+}
+
+input[type=range].primary::-ms-thumb {
+  background: #0808c9;
+}
+
+input[type=range].secondary:focus::-ms-fill-lower {
+  background: #9e9e9e;
+}
+
+input[type=range].secondary::-webkit-slider-runnable-track {
+  background: #9e9e9e;
+}
+
+input[type=range].secondary::-webkit-slider-thumb {
+  background: #9e9e9e;
+}
+
+input[type=range].secondary::-moz-range-track {
+  background: #9e9e9e;
+}
+
+input[type=range].secondary::-moz-range-thumb {
+  background: #9e9e9e;
+}
+
+input[type=range].secondary::-ms-fill-lower {
+  background: #999999;
+}
+
+input[type=range].secondary::-ms-fill-upper {
+  background: #9e9e9e;
+}
+
+input[type=range].secondary::-ms-thumb {
+  background: #9e9e9e;
+}
+
+input[type=range].info:focus::-ms-fill-lower {
+  background: #51a1ec;
+}
+
+input[type=range].info::-webkit-slider-runnable-track {
+  background: #51a1ec;
+}
+
+input[type=range].info::-webkit-slider-thumb {
+  background: #51a1ec;
+}
+
+input[type=range].info::-moz-range-track {
+  background: #51a1ec;
+}
+
+input[type=range].info::-moz-range-thumb {
+  background: #51a1ec;
+}
+
+input[type=range].info::-ms-fill-lower {
+  background: #489ceb;
+}
+
+input[type=range].info::-ms-fill-upper {
+  background: #51a1ec;
+}
+
+input[type=range].info::-ms-thumb {
+  background: #51a1ec;
+}
+
+input[type=range].success:focus::-ms-fill-lower {
+  background: #05C16C;
+}
+
+input[type=range].success::-webkit-slider-runnable-track {
+  background: #05C16C;
+}
+
+input[type=range].success::-webkit-slider-thumb {
+  background: #05C16C;
+}
+
+input[type=range].success::-moz-range-track {
+  background: #05C16C;
+}
+
+input[type=range].success::-moz-range-thumb {
+  background: #05C16C;
+}
+
+input[type=range].success::-ms-fill-lower {
+  background: #05b766;
+}
+
+input[type=range].success::-ms-fill-upper {
+  background: #05C16C;
+}
+
+input[type=range].success::-ms-thumb {
+  background: #05C16C;
+}
+
+input[type=range].warn:focus::-ms-fill-lower {
+  background: #E1BB22;
+}
+
+input[type=range].warn::-webkit-slider-runnable-track {
+  background: #E1BB22;
+}
+
+input[type=range].warn::-webkit-slider-thumb {
+  background: #E1BB22;
+}
+
+input[type=range].warn::-moz-range-track {
+  background: #E1BB22;
+}
+
+input[type=range].warn::-moz-range-thumb {
+  background: #E1BB22;
+}
+
+input[type=range].warn::-ms-fill-lower {
+  background: #dbb51e;
+}
+
+input[type=range].warn::-ms-fill-upper {
+  background: #E1BB22;
+}
+
+input[type=range].warn::-ms-thumb {
+  background: #E1BB22;
+}
+
+input[type=range].error:focus::-ms-fill-lower {
+  background: #E90000;
+}
+
+input[type=range].error::-webkit-slider-runnable-track {
+  background: #E90000;
+}
+
+input[type=range].error::-webkit-slider-thumb {
+  background: #E90000;
+}
+
+input[type=range].error::-moz-range-track {
+  background: #E90000;
+}
+
+input[type=range].error::-moz-range-thumb {
+  background: #E90000;
+}
+
+input[type=range].error::-ms-fill-lower {
+  background: #df0000;
+}
+
+input[type=range].error::-ms-fill-upper {
+  background: #E90000;
+}
+
+input[type=range].error::-ms-thumb {
+  background: #E90000;
+}
+
+input[type=range].light:focus::-ms-fill-lower {
+  background: #f5f5f5;
+}
+
+input[type=range].light::-webkit-slider-runnable-track {
+  background: #f5f5f5;
+}
+
+input[type=range].light::-webkit-slider-thumb {
+  background: #f5f5f5;
+}
+
+input[type=range].light::-moz-range-track {
+  background: #f5f5f5;
+}
+
+input[type=range].light::-moz-range-thumb {
+  background: #f5f5f5;
+}
+
+input[type=range].light::-ms-fill-lower {
+  background: #f0f0f0;
+}
+
+input[type=range].light::-ms-fill-upper {
+  background: #f5f5f5;
+}
+
+input[type=range].light::-ms-thumb {
+  background: #f5f5f5;
+}
+
+input[type=range].dark:focus::-ms-fill-lower {
+  background: #212121;
+}
+
+input[type=range].dark::-webkit-slider-runnable-track {
+  background: #212121;
+}
+
+input[type=range].dark::-webkit-slider-thumb {
+  background: #212121;
+}
+
+input[type=range].dark::-moz-range-track {
+  background: #212121;
+}
+
+input[type=range].dark::-moz-range-thumb {
+  background: #212121;
+}
+
+input[type=range].dark::-ms-fill-lower {
+  background: #1c1c1c;
+}
+
+input[type=range].dark::-ms-fill-upper {
+  background: #212121;
+}
+
+input[type=range].dark::-ms-thumb {
+  background: #212121;
+}
+
+.mark::after {
+  display: none;
+  position: absolute;
+  content: "";
+}
+
+label.check, label.radio {
+  position: relative;
+}
+
+label.check.block, label.block.radio {
+  display: block;
+}
+
+label.check.secondary input:checked ~ .mark, label.secondary.radio input:checked ~ .mark {
+  background-color: #9e9e9e;
+}
+
+label.check.secondary input:checked ~ .mark:active, label.secondary.radio input:checked ~ .mark:active {
+  border-color: #9e9e9e;
+}
+
+label.check.info input:checked ~ .mark, label.info.radio input:checked ~ .mark {
+  background-color: #51a1ec;
+}
+
+label.check.info input:checked ~ .mark:active, label.info.radio input:checked ~ .mark:active {
+  border-color: #51a1ec;
+}
+
+label.check.success input:checked ~ .mark, label.success.radio input:checked ~ .mark {
+  background-color: #05C16C;
+}
+
+label.check.success input:checked ~ .mark:active, label.success.radio input:checked ~ .mark:active {
+  border-color: #05C16C;
+}
+
+label.check.warn input:checked ~ .mark, label.warn.radio input:checked ~ .mark {
+  background-color: #E1BB22;
+}
+
+label.check.warn input:checked ~ .mark:active, label.warn.radio input:checked ~ .mark:active {
+  border-color: #E1BB22;
+}
+
+label.check.error input:checked ~ .mark, label.error.radio input:checked ~ .mark {
+  background-color: #E90000;
+}
+
+label.check.error input:checked ~ .mark:active, label.error.radio input:checked ~ .mark:active {
+  border-color: #E90000;
+}
+
+label.check.light input:checked ~ .mark, label.light.radio input:checked ~ .mark {
+  background-color: #f5f5f5;
+}
+
+label.check.light input:checked ~ .mark:active, label.light.radio input:checked ~ .mark:active {
+  border-color: #f5f5f5;
+}
+
+label.check.dark input:checked ~ .mark, label.dark.radio input:checked ~ .mark {
+  background-color: #212121;
+}
+
+label.check.dark input:checked ~ .mark:active, label.dark.radio input:checked ~ .mark:active {
+  border-color: #212121;
+}
+
+label.check input, label.radio input {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+label.check input:checked ~ .mark, label.radio input:checked ~ .mark {
+  background-color: #0808c9;
+}
+
+label.check input:checked ~ .mark::after, label.radio input:checked ~ .mark::after {
+  display: block;
+}
+
+label.check .mark, label.radio .mark {
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 1px solid #c7c7c7;
+  border-radius: 4px;
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  cursor: pointer;
+  -webkit-transition: background-color .1s;
+  transition: background-color .1s;
+}
+
+label.check .mark:hover, label.radio .mark:hover {
+  background-color: #eee;
+}
+
+label.check .mark:active, label.radio .mark:active {
+  border-color: #0808c9;
+}
+
+label.check .mark::after, label.radio .mark::after {
+  border-radius: 1px;
+  left: 4px;
+  top: 2px;
+  width: 3px;
+  height: 6px;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(43deg);
+          transform: rotate(43deg);
+}
+
+label.radio .mark {
+  border-radius: 1rem;
+}
+
+label.radio .mark::after {
+  border-width: 0;
+  border-radius: 1rem;
+  left: 3px;
+  top: 3px;
+  width: 7px;
+  height: 7px;
+}
+
+.form-group {
+  margin: 0 0.25rem 0.5rem 0.25rem;
+}
+
+.form-group label {
+  display: block;
+}
+
+.check-group label, .radio-group label {
+  display: inline;
+}
+
+.check-group.block label, .block.radio-group label {
+  display: block;
+}
+
+.form-col {
+  margin: 0 0.25rem 0.5rem 0.25rem;
+}
+
+.form-col label {
+  display: inline;
+  margin-right: 5px;
+}
+/*# sourceMappingURL=forms.css.map */

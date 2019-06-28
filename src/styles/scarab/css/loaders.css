@@ -1,0 +1,245 @@
+progress[value] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+progress[value]::-webkit-progress-value {
+  border-radius: 4px;
+}
+
+progress.primary::-webkit-progress-value {
+  background-color: #0808c9;
+}
+
+progress.secondary::-webkit-progress-value {
+  background-color: #9e9e9e;
+}
+
+progress.info::-webkit-progress-value {
+  background-color: #51a1ec;
+}
+
+progress.success::-webkit-progress-value {
+  background-color: #05C16C;
+}
+
+progress.warn::-webkit-progress-value {
+  background-color: #E1BB22;
+}
+
+progress.error::-webkit-progress-value {
+  background-color: #E90000;
+}
+
+progress.light::-webkit-progress-value {
+  background-color: #f5f5f5;
+}
+
+progress.dark::-webkit-progress-value {
+  background-color: #212121;
+}
+
+.loader.pulse {
+  width: 2rem;
+  height: 2rem;
+  display: -ms-inline-grid;
+  display: inline-grid;
+}
+
+.loader.pulse .inner {
+  width: 2rem;
+  height: 2rem;
+  background-color: #ccc;
+  border-radius: 50%;
+  place-self: center;
+  -webkit-animation: 1s linear infinite pulse;
+          animation: 1s linear infinite pulse;
+}
+
+.loader.pulse.sm {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.loader.pulse.sm .inner {
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-animation: 1s linear infinite pulse;
+          animation: 1s linear infinite pulse;
+}
+
+.loader.pulse.lg {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.loader.pulse.lg .inner {
+  width: 2.75rem;
+  height: 2.75rem;
+  -webkit-animation: 1s linear infinite pulse;
+          animation: 1s linear infinite pulse;
+}
+
+.loader.pulse.primary .inner {
+  background-color: #0808c9;
+}
+
+.loader.pulse.secondary .inner {
+  background-color: #9e9e9e;
+}
+
+.loader.pulse.info .inner {
+  background-color: #51a1ec;
+}
+
+.loader.pulse.success .inner {
+  background-color: #05C16C;
+}
+
+.loader.pulse.warn .inner {
+  background-color: #E1BB22;
+}
+
+.loader.pulse.error .inner {
+  background-color: #E90000;
+}
+
+.loader.pulse.light .inner {
+  background-color: gainsboro;
+}
+
+.loader.pulse.dark .inner {
+  background-color: #080808;
+}
+
+.loader.spin {
+  width: 2rem;
+  height: 2rem;
+  display: -ms-inline-grid;
+  display: inline-grid;
+}
+
+.loader.spin .inner {
+  display: inherit;
+}
+
+.loader.spin .inner::after {
+  content: "C";
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #ccc;
+  -webkit-animation: 1s linear infinite spin;
+          animation: 1s linear infinite spin;
+  place-self: center;
+}
+
+.loader.spin.sm {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.loader.spin.sm .inner::after {
+  font-size: 1.5rem;
+}
+
+.loader.spin.lg {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.loader.spin.lg .inner::after {
+  font-size: 2.75rem;
+}
+
+.loader.spin.primary .inner::after {
+  color: #0808c9;
+}
+
+.loader.spin.secondary .inner::after {
+  color: #9e9e9e;
+}
+
+.loader.spin.info .inner::after {
+  color: #51a1ec;
+}
+
+.loader.spin.success .inner::after {
+  color: #05C16C;
+}
+
+.loader.spin.warn .inner::after {
+  color: #E1BB22;
+}
+
+.loader.spin.error .inner::after {
+  color: #E90000;
+}
+
+.loader.spin.light .inner::after {
+  color: gainsboro;
+}
+
+.loader.spin.dark .inner::after {
+  color: #212121;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=loaders.css.map */

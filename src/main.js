@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import './styles/scarab/css/scarab.css'
 
 Vue.config.productionTip = false
 

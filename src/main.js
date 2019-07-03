@@ -5,6 +5,7 @@ import './styles/scarab/css/scarab.css'
 
 import Home from './components/Home'
 import AllPokemon from './components/AllPokemon'
+import Pokemon from './components/Pokemon'
 
 Vue.config.productionTip = false
 Vue.use(VueRouter);
@@ -20,6 +21,11 @@ const router = new VueRouter({
       path: '/pokemon',
       name: 'allPokemon',
       component: AllPokemon
+    },
+    {
+      path: '/pokemon/:name',
+      name: 'Pokemon',
+      component: Pokemon
     }
   ]
 })

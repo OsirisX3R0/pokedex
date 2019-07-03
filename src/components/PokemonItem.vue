@@ -2,7 +2,7 @@
     <div class="card">
       <div class="card-head">
         <h3>
-          <router-link to="/pokemon" class="dark">{{pokemon.name}}</router-link>
+          <router-link :to="{ name: 'Pokemon', params: { name: pokemon.name }}" class="dark">{{pokemon.name}}</router-link>
         </h3>
       </div>
     </div>

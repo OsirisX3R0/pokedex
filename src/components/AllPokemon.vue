@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h1>Pokemon</h1>
         <h3>Count: {{pokemon.count}}</h3>
 
         <PokemonItem v-for="(pokemon, index) in pokemon.results" :key="index" :pokemon="pokemon" />

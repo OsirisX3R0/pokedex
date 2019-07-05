@@ -7,22 +7,22 @@
 </template>
 
 <script>
+import axios from 'axios'
 import PokemonItem from './PokemonItem'
-
 export default {
   name: 'AllPokemon',
   components: {PokemonItem},
   data() {
       return {
-          pokemon: null
+          pokemon: {}
       }
   },
   methods: {
 
   },
-  async created() {
-    const res = await fetch(`https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1000`);
-    this.pokemon = await res.json();
+  created: function() {
+    axios.get(`https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1000`)
+    .then(res => this.pokemon = res.data)
   }
 }
 </script>

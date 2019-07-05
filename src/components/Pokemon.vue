@@ -3,22 +3,23 @@
 </template>
 
 <script>
+import axios from 'axios';
 import PokemonDetail from './PokemonDetail';
 export default {
   name: 'Pokemon',
-   components: {PokemonDetail},
+  components: {PokemonDetail},
   data() {
       return {
           pokemon: this.$route.params.name,
-          pokemonInfo: null
+          pokemonInfo: []
       }
   },
   methods: {
 
   },
-  async created() {
-    const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${this.pokemon}`);
-    this.pokemonInfo = await res.json();
+  created: function() {
+    axios.get(`https://pokeapi.co/api/v2/pokemon/${this.pokemon}`)
+    .then(res => this.pokemonInfo = res.data)
   }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <div class="card" v-if="info">
+    <div class="card" v-if="info && info.id">
         <div class="card-head">
             <h3>#{{info.id}} <span class="cap">{{info.species.name}}</span></h3>
         </div>
@@ -11,7 +11,6 @@
 
             <div class="top-info">
                 <img :src="info.sprites.front_default" />
-                <!-- <img :src="info.sprites.back_default" /> -->
                 <span class="types">
                     <span v-for="(type, index) in types" :key="index" class="cap type">
                         <span
@@ -81,10 +80,18 @@
             <h5>Abilities</h5>
             <ul class="cap">
                 <li v-for="(ability, index) in abilities" :key="index">{{ability.ability.name}}</li>
-                <li v-for="(hidden, index) in hiddenAbility" :key="index" class="hidden">{{hidden.ability.name}} (hidden)</li>
+                <li class="hidden">{{hiddenAbility.ability.name}} (hidden)</li>
             </ul>
-            <div v-if="encounters">
-            <h5>Encounters</h5>
+
+            <h5>Moves</h5>
+            <table>
+                <thead>
+                    <tr></tr>
+                </thead>
+            </table>
+
+            <div v-if="this.encounters">
+                <h5>Encounters</h5>
                 <table>
                     <thead>
                         <tr>
@@ -92,9 +99,9 @@
                             <th>Details</th>
                         </tr>                    
                     </thead>
-                    <tbody v-for="(encounter, index) in encounters" :key="index">
-                        <tr>
-                            <th>{{encounter.location_area}}</th>
+                    <tbody>
+                        <tr v-for="(encounter, index) in this.encounters" :key="index">
+                            <th>{{encounter.location_area.name}}</th>
                             <td>
                                 <div v-for="(version, index) in encounter.version_details" :key="index">
                                     Max Chance: {{version.max_chance}}
@@ -125,26 +132,32 @@ export default {
     props: ["info"],
     data() {
         return {
-            encounters: []
+            encounters: null
         }
     },
     methods: {
-        
-    },
-    created: function() {
-        axios.get(this.info.location_area_encounters)
-        .then(res => this.encounters = res.data)
+        async getEncounters() {
+            axios.get(this.info.location_area_encounters)
+                .then(res => this.encounters = res.data)
+
+            //     var { data : info } = await this.info;
+            // axios.get(info.location_area_encounters)
+            //     .then(res => this.encounters = res.data)
+        }
     },
     computed: {
-        types: function() {            
-            return this.info.types.slice().sort((a, b) => a.slot - b.slot);
+        types: function() {
+            return this.info.types.sort((a, b) => a.slot - b.slot);
         },
         hiddenAbility: function() {
-            return this.info.abilities.filter(a => a.is_hidden == true);
+            return this.info.abilities.filter(a => a.is_hidden == true)[0];
         },
         abilities: function() {
             return this.info.abilities.filter(a => a.is_hidden != true).slice().sort((a, b) => a.slot - b.slot);
         }
+    },
+    mounted: async function() {
+        await this.getEncounters()
     }
 }
 </script>

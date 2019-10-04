@@ -1,5 +1,5 @@
 <template>
-    <PokemonDetail :info="pokemonInfo" />
+    <PokemonDetail :info="pokemonInfo" v-if="pokemonInfo" />
 </template>
 
 <script>
@@ -11,15 +11,17 @@ export default {
   data() {
       return {
           pokemon: this.$route.params.name,
-          pokemonInfo: []
+          pokemonInfo: null
       }
   },
   methods: {
-
+    async getInfo() {
+      axios.get(`https://pokeapi.co/api/v2/pokemon/${this.pokemon}`)
+        .then(res => this.pokemonInfo = res.data)
+    }
   },
-  created: function() {
-    axios.get(`https://pokeapi.co/api/v2/pokemon/${this.pokemon}`)
-    .then(res => this.pokemonInfo = res.data)
+  mounted: async function() {
+    await this.getInfo()
   }
 }
 </script>

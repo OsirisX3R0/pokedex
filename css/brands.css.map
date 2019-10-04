@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAAA;;;GAGG;AAGH,UAAU;EACR,WAAW,EAAE,uBAAuB;EACpC,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,MAAM;EACnB,YAAY,ECLgB,IAAI;EDMhC,GAAG,EAAE,qDAAyC;EAC9C,GAAG,EAAE,4DAAgD,CAAC,2BAA2B,EACjF,uDAA2C,CAAC,eAAe,EAC3D,sDAA0C,CAAC,cAAc,EACzD,qDAAyC,CAAC,kBAAkB,EAC5D,iEAAqD,CAAC,aAAa;;;AAGrE,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,uBAAuB;CACrC",
+    "sources": [
+        "../src/styles/scarab/icons/fontawesome/scss/brands.scss",
+        "../src/styles/scarab/icons/fontawesome/scss/_variables.scss"
+    ],
+    "names": [],
+    "file": "brands.css"
+}
